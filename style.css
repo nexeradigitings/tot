@@ -527,14 +527,15 @@ button{ font-family:inherit; cursor:pointer; }
 .menu-track{
   display:flex;
   gap:22px;
-  width:max-content;
   padding:8px var(--edge) 24px;
-  padding-left:max(var(--edge),20px);
-  padding-right:max(var(--edge),20px);
   overflow-x:auto;
   scroll-snap-type:x mandatory;
   scroll-padding-left:var(--edge);
   scrollbar-width:none;
+}
+.menu-track{
+  -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
 }
 .menu-track::-webkit-scrollbar{ display:none; }
 
