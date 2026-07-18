@@ -234,7 +234,7 @@ document.addEventListener('DOMContentLoaded', () => {
     carousel.addEventListener('touchstart', () => { autoplayPaused = true; }, { passive: true });
 
     const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-    if (!prefersReducedMotion) startAutoplay();
+    //if (!prefersReducedMotion) startAutoplay();
   }
 
   /* ============ FOOTER YEAR ============ */
